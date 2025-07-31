@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+# React Props e Hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório é um projeto desenvolvido com **React + TypeScript + Vite**, com foco em treinar e demonstrar o uso de **props**, **hooks** (como `useState`, `useEffect`) e a componentização de páginas em React.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
+## 📄 Descrição
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O objetivo deste projeto é praticar conceitos fundamentais do React:
+- Passagem de **props** entre componentes
+- Manipulação de estado com **useState**
+- Efeitos colaterais com **useEffect**
+- Estruturação de componentes reutilizáveis
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Estrutura do Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── App.tsx
+├── main.tsx
+├── index.css
+└── pages/
+    ├── contador/
+    │   └── Contador.tsx
+    ├── home/
+    │   └── Home.tsx
+    ├── login/
+    │   └── Login.tsx
+    └── tarefa/
+        └── Tarefa.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Como rodar o projeto localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/naahcarvalho/react-props-hooks.git
+   ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Rode o projeto:
+   ```bash
+   npm run dev
+   ```
+
+## 💡 Observações
+
+- Este projeto é didático e voltado para aprendizado.
+- Sinta-se à vontade para clonar, testar e modificar como preferir.
+
+## 🔗 Link do Repositório
+
+[https://github.com/naahcarvalho/react-props-hooks](https://github.com/naahcarvalho/react-props-hooks)
